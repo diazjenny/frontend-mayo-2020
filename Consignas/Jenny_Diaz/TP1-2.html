@@ -26,157 +26,83 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+        root {
+            font-size: 16px;
+        }
+
         body {
             font-family: 'Raleway', sans-serif;
         }
 
+        .ajuste-nav {
+            background-color: #0da7ae;
+            font-size: 1.3vw;
+        }
 
-        .ml-15 {
-            margin-left: (5 * 3);
+        .ajuste-carousel {
+            height: 19rem;
+            margin: 0rem;
+            padding: 0rem;
         }
 
         .carousel-inner img {
             width: 100%;
-            max-height: 350px;
+            max-height: 19rem;
         }
 
         .carousel-inner {
-            height: 350px;
-        }
-
-        .align {
-            display: flex;
-            margin: 5%;
+            height: 19rem;
         }
 
         .letra-carrusel {
-            font-size: 25px;
+            font-size: 1.8vw;
             font-weight: bolder;
         }
 
-
-        .titulo1 {
+        .titulo-media {
             text-align: center;
-            margin-top: 6rem;
+            margin: 2rem 0 2rem 0;
+            font-size: 1.8vw;
         }
 
         .titulo2 {
             text-align: center;
-            margin: 1rem 0;
+            margin-bottom: 2rem;
+            font-size: 2.3vw;
         }
 
         .descripcion {
-            padding: 0rem 5rem;
+            padding: 0rem 1rem;
         }
 
+        .ajuste-p-descripcion {
+            font-size: 1.15vw;
 
-        .titulo-media {
-            text-align: center;
-            margin: 3rem 0;
         }
 
         .comprar {
-            display: flex;
-            background-color: #f5f5f5;
-            border-color: #f5f5f5;
-            border-radius: 0.5rem;
-            margin: 4rem 23rem 4rem 23rem;
-            padding: 0.7rem 2rem 1rem 2rem;
+            margin: 1rem 0;
+            padding: 0rem 5rem;
             font-weight: bold;
         }
 
-        .opiniones {
-            padding: 0.5rem 5rem;
-            background-color: #f5f5f5;
+        label {
+            font-size: 1.2vw;
         }
 
-        .p-name {
-            font-size: 23px
-        }
-
-        .btn-group {
-            height: 33px
-        }
-
-        .color-boton {
-            background-color: #0da7ae;
-            border-color: #0da7ae;
-        }
-
-        .btn {
-            line-height: 15px;
-
-        }
-
-
-        .cart:hover {
-            color: #fff;
-            background-color: #0da7ae;
-            border-color: #0da7ae
-        }
-
-        .p-image img {
-            width: 100%
-        }
-
-        .mt-50 {
-            margin-top: 50px
-        }
-
-        .mb-50 {
-            margin-bottom: 50px
-        }
-
-        .newsletter {
-            padding: 40px 0;
-        }
-
-        .newsletter .content {
-            max-width: 650px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            z-index: 2
-        }
-
-        .form-control {
-            height: 50px;
-            background-color: #f5f5f5;
-            border-color: #f5f5f5;
-            border-radius: 2px 0px 0px 2px
-        }
-
-        .btn-susc {
-            min-height: 50px;
-            border-radius: 0;
+        .btn-buscar {
+            min-height: 3.125rem;
+            border-radius: 0.313rem;
             background: #0da7ae;
             color: #fff;
-            font-weight: 200
+            font-size: 1.2vw;
+            font-weight: 200;
+            width: 100%;
         }
 
-        .unsubscribe-link {
-            text-decoration: none;
-            font-size: 15px;
-            color: rgb(8, 8, 8)
-        }
-
-        .unsubscribe-link:hover {
-            text-decoration: none;
-            color: rgb(57, 14, 212)
-        }
-
-        .ajuste-container {
-            margin-top: 50px;
-            font-size: 15px;
-
-        }
-
-        .footer-copyright {
-            margin-top: 13px
-        }
-
-        .footer-copyright p {
-            margin-top: 10px
+        .opiniones {
+            padding: 0rem 3rem 0.2rem 3rem;
+            background-color: #f5f5f5;
         }
 
         .small {
@@ -242,6 +168,334 @@
                 transform: scale(1)
             }
         }
+
+        .ajuste-container {
+            margin-top: 50px;
+            font-size: 1vw;
+
+        }
+
+        .btn {
+            line-height: 15px;
+
+        }
+
+        .cart:hover {
+            color: #fff;
+            background-color: #0da7ae;
+            border-color: #0da7ae
+        }
+
+        .p-image img {
+            width: 100%
+        }
+
+        .newsletter {
+            padding: 40px 0;
+        }
+
+        .newsletter .content {
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 2
+        }
+
+        .form-control {
+            height: 50px;
+            background-color: #f5f5f5;
+            border-color: #f5f5f5;
+            border-radius: 2px 0px 0px 2px
+        }
+
+        .btn-susc {
+            min-height: 50px;
+            border-radius: 0;
+            background: #0da7ae;
+            color: #fff;
+            font-size: 1.1vw;
+            font-weight: 200
+        }
+
+        .unsubscribe-link {
+            text-decoration: none;
+            font-size: 1.1vw;
+            color: #000000;
+        }
+
+        .unsubscribe-link:hover {
+            text-decoration: none;
+            color: #00838F;
+        }
+
+        .ajuste-h6-footer {
+            font-size: 1.1vw;
+        }
+
+        .ajuste-p-footer {
+            font-size: 0.9vw;
+        }
+
+        .footer-copyright {
+            margin-top: 13px
+        }
+
+        .fa-facebook-f {
+            color: #3b5999
+        }
+
+        .fa-instagram {
+            color: #e4405f
+        }
+
+        .fa-youtube {
+            color: #cd201f
+        }
+
+        .fa-twitter {
+            color: #55acee
+        }
+
+        .footer-copyright p {
+            margin-top: 10px
+        }
+
+        /* Medium devices */
+
+        @media (min-width: 768px)and (max-width: 1024px) {
+            .ajuste-nav {
+                font-size: 1rem;
+            }
+
+            .ajuste-carousel {
+                height: 10rem;
+            }
+
+            .carousel-inner img {
+                max-height: 10rem;
+            }
+
+            .carousel-inner {
+                height: 10rem;
+            }
+
+            label {
+                font-size: 0.8rem;
+            }
+
+            .titulo-media {
+                font-size: 1rem;
+            }
+
+            .ajuste-p-descripcion {
+                font-size: 0.7rem;
+            }
+
+            .ajuste-img-media {
+                width: 14rem;
+            }
+
+            .comprar {
+                margin: 1rem 0 0 0;
+            }
+
+            .btn-buscar {
+                min-height: 2.125rem;
+                font-size: 0.8rem;
+
+            }
+
+            .form-control {
+                height: 2.125rem;
+                font-size: 0.7rem;
+            }
+
+            .opiniones {
+                padding: 0rem 10rem 0.2rem 10rem;
+            }
+
+            .name {
+                font-size: 0.8rem;
+            }
+
+            .ajuste-h5-opinion {
+                font-size: 0.9rem;
+            }
+
+            .ajuste-p-opinion {
+                font-size: 0.7rem;
+            }
+
+            .ajuste-foto-opiniones {
+                width: 90px;
+            }
+
+            .ajuste-comillas {
+                width: 20px;
+            }
+
+            .titulo2 {
+                margin-bottom: 1.5rem;
+                font-size: 1.5rem;
+            }
+
+            .newsletter .content {
+                max-width: 450px;
+            }
+
+            .btn-susc {
+                min-height: 30px;
+                font-size: 0.8rem;
+            }
+
+            .unsubscribe-link {
+                font-size: 0.7rem;
+            }
+
+            .ajuste-h6-footer {
+                font-size: 0.9rem;
+            }
+
+            .ajuste-p-footer {
+                font-size: 0.7rem;
+            }
+
+            .ajuste-img-footer {
+                width: 9.25rem;
+                height: 3.25rem;
+            }
+
+            .ajuste-img-footer-app {
+                width: 3.25rem;
+                height: 1rem;
+            }
+        }
+
+        /* Smartphones*/
+        @media (min-width: 320px) and (max-width: 480px) {
+            .ajuste-nav {
+                font-size: 0.7rem;
+            }
+
+            .ajuste-carousel {
+                height: 6rem;
+            }
+
+            .carousel-inner img {
+                max-height: 6rem;
+            }
+
+            .carousel-inner {
+                height: 6rem;
+            }
+
+            .titulo-media {
+                font-size: 0.8rem;
+                margin: 0.6rem 0;
+            }
+
+            .ajuste-p-descripcion {
+                font-size: 0.5rem;
+            }
+
+            .ajuste-img-media {
+                width: 7rem;
+            }
+
+            label {
+                font-size: 0.6rem;
+            }
+
+            .comprar {
+                margin-bottom: 0rem;
+            }
+
+            .card-body {
+                padding: 0.2rem;
+            }
+
+            .form-control {
+                height: 1.5rem;
+                font-size: 0.6rem;
+            }
+
+            .btn-buscar {
+                min-height: 1.5rem;
+                font-size: 0.7rem;
+            }
+
+            .opiniones {
+                padding: 0rem 1rem 0.1rem 1rem;
+            }
+
+            .name {
+                font-size: 0.8rem;
+            }
+
+            .ajuste-h5-opinion {
+                margin-top: 0.5rem;
+                font-size: 0.8rem;
+            }
+
+            .ajuste-p-opinion {
+                font-size: 0.6rem;
+            }
+
+            .ajuste-foto-opiniones {
+                width: 80px;
+            }
+
+            .ajuste-comillas {
+                width: 17px;
+            }
+
+            .titulo2 {
+                margin: 0 0 1rem 0;
+                font-size: 0.9rem;
+            }
+
+            .newsletter .content {
+                max-width: 400px;
+            }
+
+            .btn-susc {
+                min-height: 1.5rem;
+                font-size: 0.6rem;
+            }
+
+            .unsubscribe-link {
+                font-size: 0.65rem;
+            }
+
+            .ajuste-container {
+                margin: 0;
+            }
+
+            .ajuste-h6-footer {
+                font-size: 0.7rem;
+            }
+
+            .ajuste-p-footer {
+                font-size: 0.65rem;
+            }
+
+            .ajuste-img-footer {
+                width: 9.25rem;
+                height: 3.25rem;
+            }
+
+            .ajuste-footer-xs {
+                display: none;
+            }
+
+            .footer-copyright p {
+                font-size: 0.5rem;
+            }
+
+
+
+        }
     </style>
 
 </head>
@@ -250,8 +504,8 @@
     <main>
         <div class="container-fluid">
             <header>
-                <nav class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-dark flex-column flex-md-row bd-navbar sticky-top"
-                    style="background-color: #0da7ae; font-size: 18px;">
+                <nav
+                    class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-dark flex-column flex-md-row bd-navbar sticky-top ajuste-nav">
                     <div class="container"><button data-toggle="collapse" class="navbar-toggler"
                             data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
                                 class="navbar-toggler-icon"></span></button>
@@ -276,7 +530,8 @@
                 </nav>
             </header>
             <section>
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-inetrval="2000">
+                <div id="carouselExampleCaptions" class="carousel slide ajuste-carousel" data-ride="carousel"
+                    data-inetrval="2000">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -318,15 +573,17 @@
                     Parque Nacional Natural Los Colares del Rosario y de San Bernardo.
                 </h5>
                 <div class="media">
-                    <img src="img/tp1/baru-media1.jpg" class="align-self-center mr-3 rounded" alt="...">
+                    <img src="img/tp1/baru-media1.jpg" class="align-self-center mr-3 rounded ajuste-img-media"
+                        alt="...">
                     <div class="media-body align-self-center">
 
-                        <p>Un sitio muy turístico es Barú, una península, muchas veces denominada isla, que
+                        <p class="ajuste-p-descripcion">Un sitio muy turístico es Barú, una península, muchas veces
+                            denominada isla, que
                             se encuentra delimitada por la bahía de Cartagena, el Canal del Dique y el mar Caribe.
                             Famosa por arenas blancas y rosadas, así como por su agua cristalina que permite ver el
                             fondo y muchos peces de colores. Cerca hay caños con mangles, espejos de agua y jardines
                             submarinos.</p>
-                        <p class="mb-0">
+                        <p class="mb-0 ajuste-p-descripcion">
                             El avistamiento de aves y los deportes de aventura son actividades muy populares. Es uno de
                             los destinos preferidos de los turistas que visitan Cartagena de Indias en Colombia, pues
                             sólo queda a 45 minutos en lancha. Sus bonitos paisajes, su agua turquesa y sus increíbles
@@ -338,12 +595,13 @@
                 <br>
                 <div class="media">
                     <div class="media-body align-self-center">
-                        <p>Si estas en Barú, Colombia, no te puedes perder la Playa Puntilla, una de sus
+                        <p class="ajuste-p-descripcion">Si estas en Barú, Colombia, no te puedes perder la Playa
+                            Puntilla, una de sus
                             principlaes playas, donde puedes disfrutar de un cálido clima tropical, suaves olas y arena
                             blanca. Además podrás hacer snorkeling o buceo, pues podrás ver una variedad de peces llenos
                             de colores y otros animales marinos nadando entre los corales.
                         </p>
-                        <p class="mb-0">
+                        <p class="mb-0 ajuste-p-descripcion">
                             Otra actividad que puedes disfrutar, si lo que prefieres es la aventura es el Jet ski &
                             flysurfing, manejandolo al rededor de las playas y aprecianso el Parque Nacional Natural
                             Islas Corales, Uno de los Parques Naturales más impresionantes de Colombia, que ocupa gran
@@ -352,51 +610,62 @@
                             aves y áreas verdes.
                         </p>
                     </div>
-                    <img src="img/tp1/baru-media2.jpg" class="align-self-center ml-3 rounded" alt="...">
+                    <img src="img/tp1/baru-media2.jpg" class="align-self-center ml-3 rounded ajuste-img-media"
+                        alt="...">
                 </div>
             </section>
-            <section class="comprar">
-                <form>
-                    <div class="form-row align-items-center ">
-                        <div class="col-auto">
-                            <label for="inputIda">Ida</label>
-                            <input class="form-control letra-buscar" type="date" id="ida">
+            <section class="container-fluid comprar">
+                <div class="card-body bg-light">
+                    <form id="contact-form" role="form">
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-3 ajuste-tblt">
+                                    <div class="form-group"> <label for="form_need">Ida
+                                        </label> <input id="form_date" type="date" name="date" class="form-control"
+                                            id="ida">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ajuste-tblt">
+                                    <div class="form-group"> <label for="form_need">Regreso
+                                        </label> <input id="form_date" type="date" name="date" class="form-control"
+                                            id="ida">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ajuste-tblt">
+                                    <div class="form-group"> <label for="form_need">Personas
+                                        </label> <select id="form_need" name="need" class="form-control"
+                                            required="required" data-error="Please specify your need.">
+                                            <option value="" selected disabled>
+                                                --Cantidad--</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select> </div>
+                                </div>
+                                <div class="col-md-3 align-self-center align-items-center ajuste-tblt">
+                                    <button class="btn btn-buscar " type="submit">Buscar</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <label for="inputRegreso">Regreso</label>
-                            <input class="form-control letra-buscar" type="date" id="regreso">
-                        </div>
-                        <div class="col-auto">
-                            <label for="inputPersonas">Personas</label>
-                            <select id="inputPersonas" class="form-control letra-buscar">
-                                <option selected>Selecciona</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-                        <div class="col-auto">
-                            <button type="submit" class="btn color-boton btn-primary mb-1">Comprar</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </section>
             <section class="opiniones">
                 <div class="container-fluid ajuste-container my-5 justify-content-center ">
                     <div class=" row justify-content-center  ">
                         <div class="col-lg-4 col-12 mt-5 ">
                             <div class="card mt-3 rounded ">
-                                <div class="card-header bg-white text-center border-0  ">
+                                <div class="card-header bg-white text-center border-0">
                                     <div class="row justify-content-center ">
                                         <div class="col "> <img
-                                                class="align-self-center text-center rounded-circle outside img-fluid"
+                                                class="align-self-center text-center rounded-circle outside img-fluid ajuste-foto-opiniones"
                                                 src="https://i.imgur.com/JI24t5h.jpg" width="110" height="110"> </div>
                                     </div>
                                     <div class="row text-center name">
                                         <div class="col">
-                                            <h5 class="mb-0 profile-pic">Dianitalorena</h5> <small
+                                            <h5 class="mb-0 profile-pic ajuste-h5-opinion">Dianitalorena</h5> <small
                                                 class="mt-0">Chile</small>
-                                            <p><span class="fa fa-star mr-1"></span><span
+                                            <p class="mb-0"><span class="fa fa-star mr-1"></span><span
                                                     class="fa fa-star mr-1"></span><span
                                                     class="fa fa-star mr-1"></span><span
                                                     class="fa fa-star mr-1"></span><span
@@ -407,12 +676,13 @@
                                 <div class="card-body pt-0 text-center pb-3 ">
                                     <div class="row justify-content-center">
                                         <div class="col-md-8 col">
-                                            <p class="bold"> <span><img class="img-fluid quotes"
+                                            <p class="bold ajuste-p-opinion"> <span><img
+                                                        class="img-fluid quotes ajuste-comillas"
                                                         src="img/tp1/comillas-abre.png" width="40"
                                                         height="40"></span>Disfrutamos la linda playa y mar, muy limpio
                                                 y azul el mar, la arena blanca y delgada, los habitantes y vendedores
                                                 muy amables y respetuosos. Pasamos delicioso, todo excelente.
-                                                <span><img class="img-fluid quotes-down"
+                                                <span><img class="img-fluid quotes-down ajuste-comillas"
                                                         src="img/tp1/comillas-cierra.png" width="40" height="40">
                                                 </span></p>
                                         </div>
@@ -425,14 +695,14 @@
                                 <div class="card-header bg-white text-center border-0 ">
                                     <div class="row justify-content-center ">
                                         <div class="col"> <img
-                                                class="align-self-center text-center rounded-circle outside img-fluid"
+                                                class="align-self-center text-center rounded-circle outside img-fluid ajuste-foto-opiniones"
                                                 src="https://i.imgur.com/kkjs7EC.png" width="110" height="110"> </div>
                                     </div>
                                     <div class="row text-center name">
                                         <div class="col">
-                                            <h5 class="mb-0 profile-pic">Maria N </h5> <small
+                                            <h5 class="mb-0 profile-pic ajuste-h5-opinion">Maria N </h5> <small
                                                 class="mt-0">Argentina</small>
-                                            <p><span class="fa fa-star mr-1"></span><span
+                                            <p class="mb-0"><span class="fa fa-star mr-1"></span><span
                                                     class="fa fa-star mr-1"></span><span
                                                     class="fa fa-star mr-1"></span><span
                                                     class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span>
@@ -443,13 +713,15 @@
                                 <div class="card-body pt-0 text-center pb-3 ">
                                     <div class="row justify-content-center">
                                         <div class="col-md-8 col">
-                                            <p class="bold"> <span><img class="img-fluid quotes"
+                                            <p class="bold ajuste-p-opinion"> <span><img
+                                                        class="img-fluid quotes ajuste-comillas"
                                                         src="img/tp1/comillas-abre.png" width="40" height="40"></span>
                                                 Buen y salvaje paisaje caribeño; pero accesible, con gente amable .
                                                 En el camino está el aviario, si van en coche. También hay
                                                 opción en lancha pero el mar es bien movido. <span><img
-                                                        class="img-fluid quotes-down" src="img/tp1/comillas-cierra.png"
-                                                        width="40" height="40"></span> </p>
+                                                        class="img-fluid quotes-down ajuste-comillas"
+                                                        src="img/tp1/comillas-cierra.png" width="40" height="40"></span>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -460,14 +732,14 @@
                                 <div class="card-header bg-white text-center border-0 ">
                                     <div class="row justify-content-center ">
                                         <div class="col"> <img
-                                                class="align-self-center text-center rounded-circle outside img-fluid"
+                                                class="align-self-center text-center rounded-circle outside img-fluid ajuste-foto-opiniones"
                                                 src="https://i.imgur.com/At1IG6H.png" width="110" height="110"> </div>
                                     </div>
                                     <div class="row text-center name">
                                         <div class="col">
-                                            <h5 class="mb-0 profile-pic">Carlos Alberto J </h5> <small
+                                            <h5 class="mb-0 profile-pic ajuste-h5-opinion">Carlos Alberto J </h5> <small
                                                 class="mt-0">España</small>
-                                            <p><span class="fa fa-star mr-1"></span><span
+                                            <p class="mb-0"><span class="fa fa-star mr-1"></span><span
                                                     class="fa fa-star mr-1"></span><span
                                                     class="fa fa-star-o mr-1"></span><span
                                                     class="fa fa-star-o mr-1"></span><span
@@ -478,13 +750,14 @@
                                 <div class="card-body pt-0 text-center pb-3 ">
                                     <div class="row justify-content-center">
                                         <div class="col-md-8 col">
-                                            <p class="bold"> <span><img class="img-fluid quotes"
+                                            <p class="bold ajuste-p-opinion"> <span><img
+                                                        class="img-fluid quotes ajuste-comillas"
                                                         src="img/tp1/comillas-abre.png" width="40" height="40"></span>
                                                 Hermosa playa pero llena de ambulantes que
                                                 ofrecen de todo, hasta masajes, hace honor a su nombre por el color de
                                                 la arena, muy blanca, es una playa hermosa. <span><img
-                                                        class="img-fluid quotes-down" src="img/tp1/comillas-cierra.png"
-                                                        width="40" height="40">
+                                                        class="img-fluid quotes-down ajuste-comillas"
+                                                        src="img/tp1/comillas-cierra.png" width="40" height="40">
                                                 </span></p>
                                         </div>
                                     </div>
@@ -502,8 +775,9 @@
                                 <div class="content">
                                     <h3 class="titulo2">Recibe nuestro boletín de ofertas</h3>
                                     <div class="input-group"> <input type="email" class="form-control"
-                                            placeholder="Escribe tu email"> <span class="input-group-btn">
-                                            <button class="btn btn-susc" type="submit">Quiero suscribirme</button>
+                                            placeholder="Escribe tu email">
+                                        <button class="btn btn-susc" type="submit">Quiero
+                                            suscribirme</button>
                                     </div>
                                     <div class="text-center"> <a class="unsubscribe-link" href="#">Quieres eliminar tu
                                             suscripcion?</a> </div>
@@ -513,78 +787,78 @@
                     </div>
                 </div>
             </section>
-
-
         </div>
     </main>
-    <div class="container-fluid ajuste-container"> <output class="bg-white shadow-sm">
-            <footer class="section-footer border-top">
-                <div class="container-fluid ajuste-container">
-                    <section class="footer-top padding-y">
-                        <div class="row">
-                            <aside class="col-md-4">
-                                <article class="mr-3 "> <img class="img-responsive" src="img/tp1/logo grande.png"
-                                        height="90" class="logo-footer">
-                                    <p class="mt-3 description">Paradice es una agencia de viajes con mas de 11 años de
-                                        trayectoria en el mercado, caracterizada por el buen servicio y oferta de
-                                        productos turísticos de calidad en destinos nacionales e internacionales.</p>
-                                    <div> <a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"
-                                            data-abc="true"><i class="fa fa-facebook-f"></i></a> <a
-                                            class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"
-                                            data-abc="true"><i class="fa fa-instagram"></i></a> <a
-                                            class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"
-                                            data-abc="true"><i class="fa fa-youtube"></i></a> <a
-                                            class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"
-                                            data-abc="true"><i class="fa fa-twitter"></i></a> </div>
-                                </article>
-                            </aside>
-                            <aside class="col-sm-3 col-md-2">
-                                <h6 class="title">Acerca de nosotros</h6>
-                                <ul class="list-unstyled">
-                                    <li> <a href="#" data-abc="true">Quienes Somos</a></li>
-                                    <li> <a href="#" data-abc="true">Servicios</a></li>
-                                    <li> <a href="#" data-abc="true">Terminos y Condiciones</a></li>
-                                    <li> <a href="#" data-abc="true">Nuestro Blog</a></li>
-                                </ul>
-                            </aside>
-                            <aside class="col-sm-3 col-md-2">
-                                <h6 class="title">Servicios</h6>
-                                <ul class="list-unstyled">
-                                    <li> <a href="#" data-abc="true">Servicio al Cliente</a></li>
-                                    <li> <a href="#" data-abc="true">Codigo de Conducta</a></li>
-                                    <li> <a href="#" data-abc="true">Politica de Privacidad</a></li>
-                                    <li> <a href="#" data-abc="true">PQRS</a></li>
-                                </ul>
-                            </aside>
-                            <aside class="col-sm-3 col-md-2">
-                                <h6 class="title">Para clientes</h6>
-                                <ul class="list-unstyled">
-                                    <li> <a href="#" data-abc="true"> Inicio de Sesion </a></li>
-                                    <li> <a href="#" data-abc="true"> Resgitrate </a></li>
-                                    <li> <a href="#" data-abc="true"> Ajustes de cuenta </a></li>
-                                    <li> <a href="#" data-abc="true"> Mis paquetes </a></li>
-                                </ul>
-                            </aside>
-                            <aside class="col-sm-2 col-md-2">
-                                <h6 class="title">Our app</h6> <a href="#" class="d-block mb-2" data-abc="true"><img
-                                        class="img-responsive"
-                                        src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574317087/AAA/appstore.png"
-                                        height="40"></a> <a href="#" class="d-block mb-2" data-abc="true"><img
-                                        class="img-responsive"
-                                        src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574317110/AAA/playmarket.png"
-                                        height="40"></a>
-                            </aside>
-                        </div>
-                    </section>
-                    <section class="footer-copyright border-top">
-                        <p class="float-left text-muted"> © 2020 All rights resetved </p>
-                        <p target="_blank" class="float-right text-muted"> <a href="#" data-abc="true">Privacidad &amp;
-                                Cookies</a> &nbsp; &nbsp; <a href="#" data-abc="true">Accesibilidad</a> </p>
-                    </section>
-                </div>
-            </footer>
-        </output> </div>
-
+    <div class="container-fluid ">
+        <footer class="section-footer border-top ">
+            <div class="container-fluid ajuste-container ">
+                <section class="footer-top padding-y">
+                    <div class="row">
+                        <aside class="col-md-4">
+                            <article class="mr-3 ml-3"> <img class="img-responsive ajuste-img-footer"
+                                    src="img/tp1/logo grande.png" height="90" class="logo-footer">
+                                <p class="mt-3 description ajuste-p-footer ajuste-footer-xs">Paradice es una agencia de
+                                    viajes con mas
+                                    de 11 años de
+                                    trayectoria en el mercado, caracterizada por el buen servicio y oferta de
+                                    productos turísticos de calidad en destinos nacionales e internacionales.</p>
+                                <div> <a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"
+                                        data-abc="true"><i class="fa fa-facebook-f"></i></a> <a
+                                        class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"
+                                        data-abc="true"><i class="fa fa-instagram"></i></a> <a
+                                        class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"
+                                        data-abc="true"><i class="fa fa-youtube"></i></a> <a
+                                        class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"
+                                        data-abc="true"><i class="fa fa-twitter"></i></a> </div>
+                            </article>
+                        </aside>
+                        <aside class="col-sm-3 col-md-2">
+                            <h6 class="title ajuste-h6-footer">Acerca de nosotros</h6>
+                            <ul class="list-unstyled ajuste-p-footer">
+                                <li> <a href="#" data-abc="true">Quienes Somos</a></li>
+                                <li> <a href="#" data-abc="true">Servicios</a></li>
+                                <li> <a href="#" data-abc="true">Terminos y Condiciones</a></li>
+                                <li> <a href="#" data-abc="true">Nuestro Blog</a></li>
+                            </ul>
+                        </aside>
+                        <aside class="col-sm-3 col-md-2 ajuste-footer-xs">
+                            <h6 class="title ajuste-h6-footer ">Servicios</h6>
+                            <ul class="list-unstyled ajuste-p-footer">
+                                <li> <a href="#" data-abc="true">Servicio al Cliente</a></li>
+                                <li> <a href="#" data-abc="true">Codigo de Conducta</a></li>
+                                <li> <a href="#" data-abc="true">Politica de Privacidad</a></li>
+                                <li> <a href="#" data-abc="true">PQRS</a></li>
+                            </ul>
+                        </aside>
+                        <aside class="col-sm-3 col-md-2 ajuste-footer-xs">
+                            <h6 class="title ajuste-h6-footer ">Para clientes</h6>
+                            <ul class="list-unstyled ajuste-p-footer">
+                                <li> <a href="#" data-abc="true"> Inicio de Sesion </a></li>
+                                <li> <a href="#" data-abc="true"> Resgitrate </a></li>
+                                <li> <a href="#" data-abc="true"> Ajustes de cuenta </a></li>
+                                <li> <a href="#" data-abc="true"> Mis paquetes </a></li>
+                            </ul>
+                        </aside>
+                        <aside class="col-sm-2 col-md-2 ajuste-footer-xs">
+                            <h6 class="title ajuste-h6-footer ">Our app</h6> <a href="#" class="d-block mb-2"
+                                data-abc="true"><img class="img-responsive ajuste-img-footer-app"
+                                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574317087/AAA/appstore.png"
+                                    height="40"></a> <a href="#" class="d-block mb-2" data-abc="true"><img
+                                    class="img-responsive ajuste-img-footer-app"
+                                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574317110/AAA/playmarket.png"
+                                    height="40"></a>
+                        </aside>
+                    </div>
+                </section>
+                <section class="footer-copyright border-top ajuste-h6-footer">
+                    <p class="float-left text-muted"> © 2020 All rights resetved </p>
+                    <p target="_blank" class="float-right text-muted"> <a href="#" data-abc="true">Privacidad &amp;
+                            Cookies</a> &nbsp; &nbsp; <a href="#" data-abc="true">Accesibilidad</a> </p>
+                </section>
+            </div>
+        </footer>
+        </output>
+    </div>
 
 
 
