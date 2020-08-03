@@ -86,6 +86,10 @@
             font-weight: bold;
         }
 
+        .ajuste-media-sm-y {
+            display: none;
+        }
+
         label {
             font-size: 1.2vw;
         }
@@ -161,12 +165,6 @@
 
         .container-fluid:hover .card:not(:hover) {
             transform: scale(0.9)
-        }
-
-        @media (max-width: 1000px) {
-            .container-fluid:hover .card:not(:hover) {
-                transform: scale(1)
-            }
         }
 
         .ajuste-container {
@@ -292,8 +290,17 @@
                 font-size: 0.7rem;
             }
 
+            .ajuste-media-sm-y {
+                display: block;
+            }
+
+            .ajuste-media-sm-n {
+                display: none;
+            }
+
             .ajuste-img-media {
                 width: 14rem;
+                margin: 0.5rem 0;
             }
 
             .comprar {
@@ -399,8 +406,17 @@
                 font-size: 0.5rem;
             }
 
+            .ajuste-media-sm-y {
+                display: block;
+            }
+
+            .ajuste-media-sm-n {
+                display: none;
+            }
+
             .ajuste-img-media {
-                width: 7rem;
+                width: 12rem;
+                margin: 0.5rem 0;
             }
 
             label {
@@ -569,10 +585,11 @@
             </section>
             <section class="descripcion">
                 <h5 class="titulo-media">¡Disfruta tus vacaciones en Isla Barú! Un lugar mágico y exótico que hace
-                    parter del
+                    parte del
                     Parque Nacional Natural Los Colares del Rosario y de San Bernardo.
                 </h5>
-                <div class="media">
+                <div
+                    class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
                     <img src="img/tp1/baru-media1.jpg" class="align-self-center mr-3 rounded ajuste-img-media"
                         alt="...">
                     <div class="media-body align-self-center">
@@ -593,7 +610,10 @@
                     </div>
                 </div>
                 <br>
-                <div class="media">
+                <div
+                    class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
+                    <img src="img/tp1/baru-media2.jpg"
+                        class="align-self-center ml-3 rounded ajuste-img-media ajuste-media-sm-y" alt="...">
                     <div class="media-body align-self-center">
                         <p class="ajuste-p-descripcion">Si estas en Barú, Colombia, no te puedes perder la Playa
                             Puntilla, una de sus
@@ -610,8 +630,8 @@
                             aves y áreas verdes.
                         </p>
                     </div>
-                    <img src="img/tp1/baru-media2.jpg" class="align-self-center ml-3 rounded ajuste-img-media"
-                        alt="...">
+                    <img src="img/tp1/baru-media2.jpg"
+                        class="align-self-center ml-3 rounded ajuste-img-media ajuste-media-sm-n" alt="...">
                 </div>
             </section>
             <section class="container-fluid comprar">
