@@ -100,7 +100,7 @@
             padding: 0.5rem;
         }
 
-        .img-pago {}
+
 
         .letra-header-tarjeta {
             font-size: 1.2vw;
@@ -227,8 +227,214 @@
                 height: 10rem;
             }
 
+            .compra {
+                padding: 0rem 5rem;
+            }
+
+            .titulo-compra {
+                margin: 1rem 0;
+                font-size: 1.5rem;
+            }
+
+            .ajuste-h2-accordion {
+                font-size: 0.95rem;
+            }
+
             label {
                 font-size: 0.8rem;
+            }
+
+            .form-control {
+                height: 30px;
+                font-size: 0.7rem;
+            }
+
+            .card-body-accordeon {
+                padding: 0.3rem;
+            }
+
+            .letra-header-tarjeta {
+                font-size: 0.9rem;
+            }
+
+            .letra-tarjeta {
+                font-size: 0.8rem;
+            }
+
+            .btn-tarjeta {
+                font-size: 0.9rem;
+            }
+
+            .letra-factura {
+                font-size: 0.8rem;
+            }
+
+            .btn-comprar {
+                min-height: 2rem;
+                font-size: 1rem;
+                margin-top: 1rem;
+            }
+
+            .titulo2 {
+                margin-bottom: 1.5rem;
+                font-size: 1.5rem;
+            }
+
+            .newsletter .content {
+                max-width: 450px;
+            }
+
+            .btn-susc {
+                min-height: 30px;
+                font-size: 0.8rem;
+            }
+
+            .unsubscribe-link {
+                font-size: 0.7rem;
+            }
+
+            .ajuste-h6-footer {
+                font-size: 0.9rem;
+            }
+
+            .ajuste-p-footer {
+                font-size: 0.7rem;
+            }
+
+            .ajuste-img-footer {
+                width: 9.25rem;
+                height: 3.25rem;
+            }
+
+            .ajuste-img-footer-app {
+                width: 3.25rem;
+                height: 1rem;
+            }
+        }
+
+        /* Smartphones*/
+        @media (min-width: 320px) and (max-width: 480px) {
+            .ajuste-nav {
+                font-size: 0.7rem;
+            }
+
+            .ajuste-carousel {
+                height: 6rem;
+            }
+
+            .carousel-inner img {
+                max-height: 6rem;
+            }
+
+            .carousel-inner {
+                height: 6rem;
+            }
+
+            .compra {
+                padding: 0rem 0.5rem;
+            }
+
+            .titulo-compra {
+                margin: 1rem 0;
+                font-size: 1.1rem;
+            }
+
+            .ajuste-h2-accordion {
+                font-size: 0.9rem;
+            }
+
+            label {
+                font-size: 0.7rem;
+            }
+
+            .form-control {
+                height: 25px;
+                font-size: 0.6rem;
+            }
+
+            .card-body-accordeon {
+                padding: 0.1rem;
+            }
+
+            .letra-header-tarjeta {
+                font-size: 0.7rem;
+            }
+
+            .img-pago {
+                width: 1rem;
+            }
+
+            .ajuste-header-tarjeta {
+                padding: 0 1.2rem;
+            }
+
+            .letra-tarjeta {
+                font-size: 0.8rem;
+            }
+
+            .btn-tarjeta {
+                font-size: 0.8rem;
+            }
+
+            .letra-factura {
+                font-size: 0.5rem;
+            }
+
+            .ajuste-factura {
+                padding: 0.5rem 0;
+            }
+
+            .ancho-col {
+                width: 1rem;
+            }
+
+            .btn-comprar {
+                min-height: 2rem;
+                font-size: 1rem;
+                margin-top: 1rem;
+            }
+
+            .titulo2 {
+                margin: 0 0 1rem 0;
+                font-size: 0.9rem;
+            }
+
+            .newsletter .content {
+                max-width: 400px;
+            }
+
+            .btn-susc {
+                min-height: 1rem;
+                font-size: 0.6rem;
+            }
+
+            .unsubscribe-link {
+                font-size: 0.65rem;
+            }
+
+            .ajuste-container {
+                margin: 0;
+            }
+
+            .ajuste-h6-footer {
+                font-size: 0.7rem;
+            }
+
+            .ajuste-p-footer {
+                font-size: 0.65rem;
+            }
+
+            .ajuste-img-footer {
+                width: 9.25rem;
+                height: 3.25rem;
+            }
+
+            .ajuste-footer-xs {
+                display: none;
+            }
+
+            .footer-copyright p {
+                font-size: 0.5rem;
             }
         }
     </style>
@@ -471,7 +677,7 @@
                                         <div class="container-fluid d-flex justify-content-center ">
                                             <div class="col-sm-12 col-md-12 col-lg-6">
                                                 <div class="card  ">
-                                                    <div class="card-header ">
+                                                    <div class="card-header ajuste-header-tarjeta">
                                                         <div class="row">
                                                             <div class="col-md-6 p-0 letra-header-tarjeta"> TARJETA
                                                                 DEBITO/CREDITO
@@ -487,7 +693,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="card-body" style="height: 350px">
+                                                    <div class="card-body ">
                                                         <div class="form-group letra-tarjeta"> <label for="cc-number"
                                                                 class="control-label">Numero de Tarjeta</label> <input
                                                                 id="cc-number" type="tel"
@@ -539,7 +745,7 @@
                         </div>
                         <div role="tabpanel" id="collapseFour" class="collapse" aria-labelledby="headingFour"
                             data-parent="#accordionExample">
-                            <div class="card-body">
+                            <div class="card-body ajuste-factura">
                                 <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 padding">
                                     <div class="card letra-factura">
                                         <div class="card-body">
@@ -557,7 +763,7 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td class="center">1</td>
+                                                            <td class="center ancho-col">1</td>
                                                             <td class="left strong">Baru</td>
                                                             <td class="left">Plan alojamiento todo incluido 4 noches / 5
                                                                 dias en Hotel Decameron Baru</td>
