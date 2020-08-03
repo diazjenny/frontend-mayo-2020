@@ -21,28 +21,42 @@
     <script src="https://use.fontawesome.com/83c54c54ab.js"></script>
     <script src="https://use.fontawesome.com/a529523b4b.js"></script>
     <script src="https://use.fontawesome.com/02bd8e69f4.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.min.js"></script>
 
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+        root {
+            font-size: 16px;
+        }
+
         body {
             font-family: 'Raleway', sans-serif;
         }
 
+        .ajuste-nav {
+            background-color: #0da7ae;
+            font-size: 1.3vw;
+        }
 
-        .ml-15 {
-            margin-left: (5 * 3);
+        .ajuste-carousel {
+            height: 19rem;
+            margin: 0rem;
+            padding: 0rem;
         }
 
         .carousel-inner img {
             width: 100%;
-            max-height: 350px;
+            max-height: 19rem;
         }
 
         .carousel-inner {
-            height: 350px;
+            height: 19rem;
+        }
+
+        .letra-carrusel {
+            font-size: 1.8vw;
+            font-weight: bolder;
         }
 
         .align {
@@ -55,25 +69,64 @@
             font-weight: bolder;
         }
 
-
-        .titulo1 {
-            text-align: center;
-            margin-top: 6rem;
-        }
-
-        .titulo2 {
-            text-align: center;
-            margin: 1rem 0;
-        }
-
         .compra {
-            padding: 0rem 8rem;
+            padding: 0rem 13rem;
         }
-
 
         .titulo-compra {
             text-align: center;
             margin: 3rem 0;
+            font-size: 2.1vw;
+        }
+
+        .ajuste-h2-accordion {
+            font-size: 1.3vw;
+            color: #0da7ae;
+        }
+
+        label {
+            font-size: 1.1vw;
+        }
+
+        .form-control {
+            height: 40px;
+            font-size: 1vw;
+            background-color: #f5f5f5;
+            border-color: #f5f5f5;
+            border-radius: 2px 0px 0px 2px
+        }
+
+        .card-body-accordeon {
+            padding: 0.5rem;
+        }
+
+        .img-pago {}
+
+        .letra-header-tarjeta {
+            font-size: 1.2vw;
+        }
+
+        .letra-tarjeta {
+            font-size: 1.2vw;
+        }
+
+        .btn-tarjeta {
+            background-color: #0da7ae;
+            border-color: #0da7ae;
+            color: #FFFFFF;
+            font-size: 1.2vw;
+        }
+
+        .letra-factura {
+            font-size: 1vw;
+        }
+
+        .btn-comprar {
+            min-height: 3.125rem;
+            background-color: #0da7ae;
+            border-color: #0da7ae;
+            font-size: 1.5vw;
+            margin-top: 1rem;
         }
 
         .btn {
@@ -81,10 +134,10 @@
 
         }
 
-        .cart:hover {
-            color: #fff;
-            background-color: #0da7ae;
-            border-color: #0da7ae
+        .titulo2 {
+            text-align: center;
+            margin: 1rem 0;
+            font-size: 2.1vw;
         }
 
         .newsletter {
@@ -104,45 +157,79 @@
             border-radius: 0;
             background: #0da7ae;
             color: #fff;
+            font-size: 1.1vw;
             font-weight: 200
         }
 
         .unsubscribe-link {
             text-decoration: none;
-            font-size: 15px;
-            color: rgb(8, 8, 8)
+            font-size: 1.1vw;
+            color: #000000;
         }
 
         .unsubscribe-link:hover {
             text-decoration: none;
-            color: rgb(57, 14, 212)
+            color: #00838F;
+        }
+
+        .ajuste-container {
+            margin-top: 50px;
+        }
+
+        .ajuste-h6-footer {
+            font-size: 1.1vw;
+        }
+
+        .ajuste-p-footer {
+            font-size: 0.9vw;
         }
 
         .footer-copyright {
             margin-top: 13px
         }
 
+        .fa-facebook-f {
+            color: #3b5999
+        }
+
+        .fa-instagram {
+            color: #e4405f
+        }
+
+        .fa-youtube {
+            color: #cd201f
+        }
+
+        .fa-twitter {
+            color: #55acee
+        }
+
         .footer-copyright p {
             margin-top: 10px
         }
 
-        .fa {
-            color: #B2DFDB;
-            cursor: pointer
-        }
+        /* Medium devices */
 
-        .terminos {
-            margin: 1rem 0;
+        @media (min-width: 768px)and (max-width: 1024px) {
+            .ajuste-nav {
+                font-size: 1rem;
+            }
 
-        }
+            .ajuste-carousel {
+                height: 10rem;
+            }
 
-        .color-boton {
-            background-color: #0da7ae;
-            border-color: #0da7ae;
-        }
+            .carousel-inner img {
+                max-height: 10rem;
+            }
 
-        .suscribete {
-            padding: 5rem 0;
+            .carousel-inner {
+                height: 10rem;
+            }
+
+            label {
+                font-size: 0.8rem;
+            }
         }
     </style>
 
@@ -152,8 +239,8 @@
     <main>
         <div class="container-fluid">
             <header>
-                <nav class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-dark flex-column flex-md-row bd-navbar sticky-top"
-                    style="background-color: #0da7ae; font-size: 18px;">
+                <nav
+                    class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-dark flex-column flex-md-row bd-navbar sticky-top ajuste-nav">
                     <div class="container"><button data-toggle="collapse" class="navbar-toggler"
                             data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
                                 class="navbar-toggler-icon"></span></button>
@@ -178,7 +265,8 @@
                 </nav>
             </header>
             <section>
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-inetrval="2000">
+                <div id="carouselExampleCaptions" class="carousel slide ajuste-carousel" data-ride="carousel"
+                    data-inetrval="2000">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -217,12 +305,13 @@
             <section class="compra">
                 <h5 class="titulo-compra">Completa tus datos y finaliza tu compra
                 </h5>
-                <div class="accordion" id="accordionExample" role="tablist">
+                <div class="accordion mb-2" id="accordionExample" role="tablist">
                     <div class="card">
                         <div class="card-header" role="tab" id="headingOne">
                             <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="btn btn-link btn-block text-left ajuste-h2-accordion" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
                                     Viajeros
                                 </button>
                             </h2>
@@ -230,69 +319,72 @@
 
                         <div role="tabpanel" id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
-                            <div class="card-body">
-                                <div class="row ">
-                                    <div class="col-lg-7 mx-auto">
-                                        <div class="card mt-2 mx-auto p-4 bg-light">
-                                            <div class="card-body bg-light">
-                                                <div class="container">
-                                                    <form id="contact-form" role="form">
-                                                        <div class="controls">
-                                                            <div class="row">
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group"> <label
-                                                                            for="form_need">Cantidad de Adultos
-                                                                            *</label> <select id="form_need" name="need"
-                                                                            class="form-control" required="required"
-                                                                            data-error="Please specify your need.">
-                                                                            <option value="" selected disabled>
-                                                                                --cantidad--</option>
-                                                                            <option>1</option>
-                                                                            <option>2</option>
-                                                                            <option>3
-                                                                            </option>
-                                                                        </select> </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group"> <label
-                                                                            for="form_need">Cantidad de Niños
-                                                                            *</label> <select id="form_need" name="need"
-                                                                            class="form-control" required="required"
-                                                                            data-error="Please specify your need.">
-                                                                            <option value="" selected disabled>
-                                                                                --cantidad--</option>
-                                                                            <option>1</option>
-                                                                            <option>2</option>
-                                                                            <option>3
-                                                                            </option>
-                                                                        </select> </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group"> <label
-                                                                            for="form_name">Nombre Completo *</label>
-                                                                        <input id="form_name" type="text" name="name"
-                                                                            class="form-control"
-                                                                            placeholder="Ingrese su nombre completo *"
-                                                                            required="required"
-                                                                            data-error="Su nombre es requerido">
+                            <div class="container-fluid">
+                                <div class="card-body">
+                                    <div class="row ">
+                                        <div class="col-lg-7 max-width mx-auto">
+                                            <div class="card max-widthmx-auto bg-light">
+                                                <div class="card-body bg-light card-body-accordeon">
+                                                    <div class="container-fluid">
+                                                        <form id="contact-form" role="form">
+                                                            <div class="controls">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group"> <label
+                                                                                for="form_need">Cantidad de Adultos
+                                                                            </label> <select id="form_need" name="need"
+                                                                                class="form-control" required="required"
+                                                                                data-error="Please specify your need.">
+                                                                                <option value="" selected disabled>
+                                                                                    --cantidad--</option>
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3
+                                                                                </option>
+                                                                            </select> </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group"> <label
+                                                                                for="form_need">Cantidad de Niños
+                                                                            </label> <select id="form_need" name="need"
+                                                                                class="form-control" required="required"
+                                                                                data-error="Please specify your need.">
+                                                                                <option value="" selected disabled>
+                                                                                    --cantidad--</option>
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3
+                                                                                </option>
+                                                                            </select> </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="form-group"> <label
-                                                                            for="form_number">Cedula de Ciudadania
-                                                                            *</label>
-                                                                        <input id="form_number" type="number"
-                                                                            name="number" class="form-control"
-                                                                            placeholder="Ingrese su cedula de ciudadania *"
-                                                                            required="required"
-                                                                            data-error="Su cedula es requerido">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group"> <label
+                                                                                for="form_name">Nombre Completo
+                                                                            </label>
+                                                                            <input id="form_name" type="text"
+                                                                                name="name" class="form-control"
+                                                                                placeholder="Ingrese su nombre completo"
+                                                                                required="required"
+                                                                                data-error="Su nombre es requerido">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group"> <label
+                                                                                for="form_number">Cedula de Ciudadania
+                                                                            </label>
+                                                                            <input id="form_number" type="number"
+                                                                                name="number" class="form-control"
+                                                                                placeholder="Ingrese su cedula"
+                                                                                required="required"
+                                                                                data-error="Su cedula es requerida">
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </form>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -305,9 +397,9 @@
                     <div class="card">
                         <div class="card-header" role="tab" id="headingTwo">
                             <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo">
+                                <button class="btn btn-link btn-block text-left collapsed ajuste-h2-accordion"
+                                    type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
                                     Destino
                                 </button>
                             </h2>
@@ -317,16 +409,16 @@
                             <div class="card-body">
                                 <div class="row ">
                                     <div class="col-lg-7 mx-auto">
-                                        <div class="card mt-2 mx-auto p-4 bg-light">
-                                            <div class="card-body bg-light">
-                                                <div class="container">
+                                        <div class="card mt-2 mx-auto bg-light">
+                                            <div class="card-body bg-light card-body-accordeon">
+                                                <div class="container-fluid">
                                                     <form id="contact-form" role="form">
                                                         <div class="controls">
                                                             <div class="row">
                                                                 <div class="col-md-6">
                                                                     <div class="form-group"> <label
                                                                             for="form_need">Destino
-                                                                            *</label> <select id="form_need" name="need"
+                                                                        </label> <select id="form_need" name="need"
                                                                             class="form-control" required="required"
                                                                             data-error="Please specify your need.">
                                                                             <option value="" selected disabled>
@@ -338,14 +430,14 @@
                                                                 </div>
                                                                 <div class="col-md-3">
                                                                     <div class="form-group"> <label for="form_need">Ida
-                                                                            *</label> <input id="form_date" type="date"
+                                                                        </label> <input id="form_date" type="date"
                                                                             name="date" class="form-control" id="ida">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-3">
                                                                     <div class="form-group"> <label
                                                                             for="form_need">Regreso
-                                                                            *</label> <input id="form_date" type="date"
+                                                                        </label> <input id="form_date" type="date"
                                                                             name="date" class="form-control" id="ida">
                                                                     </div>
                                                                 </div>
@@ -364,9 +456,9 @@
                     <div class="card">
                         <div class="card-header" role="tab" id="headingThree">
                             <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree">
+                                <button class="btn btn-link btn-block text-left collapsed ajuste-h2-accordion"
+                                    type="button" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
                                     Pago
                                 </button>
                             </h2>
@@ -376,27 +468,28 @@
                             <div class="card-body">
                                 <div class="padding">
                                     <div class="row">
-                                        <div class="container-fluid d-flex justify-content-center">
-                                            <div class="col-sm-8 col-md-6">
-                                                <div class="card">
-                                                    <div class="card-header">
+                                        <div class="container-fluid d-flex justify-content-center ">
+                                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                                <div class="card  ">
+                                                    <div class="card-header ">
                                                         <div class="row">
-                                                            <div class="col-md-6"> <span>CREDIT/DEBIT CARD
-                                                                    PAYMENT</span>
+                                                            <div class="col-md-6 p-0 letra-header-tarjeta"> TARJETA
+                                                                DEBITO/CREDITO
                                                             </div>
-                                                            <div class="col-md-6 text-right" style="margin-top: -5px;">
-                                                                <img
+                                                            <div class="col-md-6 text-right p-0"
+                                                                style="margin-top: -5px;">
+                                                                <img class=" img-pago "
                                                                     src="https://img.icons8.com/color/36/000000/visa.png">
-                                                                <img
+                                                                <img class=" img-pago "
                                                                     src="https://img.icons8.com/color/36/000000/mastercard.png">
-                                                                <img
+                                                                <img class="img-pago "
                                                                     src="https://img.icons8.com/color/36/000000/amex.png">
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="card-body" style="height: 350px">
-                                                        <div class="form-group"> <label for="cc-number"
-                                                                class="control-label">CARD NUMBER</label> <input
+                                                        <div class="form-group letra-tarjeta"> <label for="cc-number"
+                                                                class="control-label">Numero de Tarjeta</label> <input
                                                                 id="cc-number" type="tel"
                                                                 class="input-lg form-control cc-number"
                                                                 autocomplete="cc-number"
@@ -404,27 +497,27 @@
                                                         <div class="row">
                                                             <div class="col-md-6">
                                                                 <div class="form-group"> <label for="cc-exp"
-                                                                        class="control-label">CARD EXPIRY</label> <input
-                                                                        id="cc-exp" type="tel"
+                                                                        class="control-label">Fecha de
+                                                                        Expiracion</label> <input id="cc-exp" type="tel"
                                                                         class="input-lg form-control cc-exp"
                                                                         autocomplete="cc-exp" placeholder="•• / ••"
                                                                         required> </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-group"> <label for="cc-cvc"
-                                                                        class="control-label">CARD CVC</label> <input
-                                                                        id="cc-cvc" type="tel"
-                                                                        class="input-lg form-control cc-cvc"
+                                                                        class="control-label">Codigo de
+                                                                        Verificacion</label> <input id="cc-cvc"
+                                                                        type="tel" class="input-lg form-control cc-cvc"
                                                                         autocomplete="off" placeholder="••••" required>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="form-group"> <label for="numeric"
-                                                                class="control-label">CARD HOLDER NAME</label> <input
+                                                                class="control-label">Nombre del Titular</label> <input
                                                                 type="text" class="input-lg form-control"> </div>
                                                         <div class="form-group"> <input value="Agregar Tarjeta"
-                                                                type="button" class="btn  form-control rounded" style="font-size: .9rem; background-color: #0da7ae;
-                                                                border-color: #0da7ae; color:white"> </div>
+                                                                type="button"
+                                                                class="btn  form-control rounded btn-tarjeta"> </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -437,9 +530,9 @@
                     <div class="card">
                         <div class="card-header" role="tab" id="headingFour">
                             <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                                    aria-controls="collapseFour">
+                                <button class="btn btn-link btn-block text-left collapsed ajuste-h2-accordion"
+                                    type="button" data-toggle="collapse" data-target="#collapseFour"
+                                    aria-expanded="false" aria-controls="collapseFour">
                                     Antes de finalizar verifica los datos ingresados
                                 </button>
                             </h2>
@@ -448,7 +541,7 @@
                             data-parent="#accordionExample">
                             <div class="card-body">
                                 <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 padding">
-                                    <div class="card">
+                                    <div class="card letra-factura">
                                         <div class="card-body">
                                             <div class="table-responsive-sm">
                                                 <table class="table table-striped">
@@ -478,7 +571,7 @@
                                             <div class="row">
                                                 <div class="col-lg-4 col-sm-5">
                                                 </div>
-                                                <div class="col-lg-4 col-sm-5 ml-auto">
+                                                <div class="col-lg-4 col-sm-5 ml-auto p-0">
                                                     <table class="table table-clear">
                                                         <tbody>
                                                             <tr>
@@ -519,19 +612,19 @@
                 </div>
 
                 <div>
-                    <div class="custom-control custom-checkbox terminos">
+                    <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck1">
                         <label class="custom-control-label" for="customCheck1">Leí y acepto las condiciones de compra ,
                             políticas de privacidad y políticas de cambios y cancelaciones.</label>
                         <br>
                     </div>
-                    <div class="terminos row justify-content-center">
-                        <button type="button" class="btn btn-primary btn-lg color-boton">Comprar</button>
+                    <div class="row justify-content-center">
+                        <button type="button" class="btn btn-primary btn-lg btn-comprar">Comprar</button>
                     </div>
                 </div>
             </section>
 
-            <section class="suscribete">
+            <section>
                 <div class="newsletter">
                     <div class="container">
                         <div class="row">
@@ -539,8 +632,9 @@
                                 <div class="content">
                                     <h3 class="titulo2">Recibe nuestro boletín de ofertas</h3>
                                     <div class="input-group"> <input type="email" class="form-control"
-                                            placeholder="Escribe tu email"> <span class="input-group-btn">
-                                            <button class="btn btn-susc" type="submit">Quiero suscribirme</button>
+                                            placeholder="Escribe tu email">
+                                        <button class="btn btn-susc" type="submit">Quiero
+                                            suscribirme</button>
                                     </div>
                                     <div class="text-center"> <a class="unsubscribe-link" href="#">Quieres eliminar tu
                                             suscripcion?</a> </div>
@@ -550,77 +644,78 @@
                     </div>
                 </div>
             </section>
-
-
         </div>
     </main>
-    <div class="container-fluid"> <output class="bg-white shadow-sm">
-            <footer class="section-footer border-top">
-                <div class="container-fluid">
-                    <section class="footer-top padding-y">
-                        <div class="row">
-                            <aside class="col-md-4">
-                                <article class="mr-3 "> <img class="img-responsive" src="img/tp1/logo grande.png"
-                                        height="90" class="logo-footer">
-                                    <p class="mt-3 description">Paradice es una agencia de viajes con mas de 11 años de
-                                        trayectoria en el mercado, caracterizada por el buen servicio y oferta de
-                                        productos turísticos de calidad en destinos nacionales e internacionales.</p>
-                                    <div> <a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"
-                                            data-abc="true"><i class="fa fa-facebook-f"></i></a> <a
-                                            class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"
-                                            data-abc="true"><i class="fa fa-instagram"></i></a> <a
-                                            class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"
-                                            data-abc="true"><i class="fa fa-youtube"></i></a> <a
-                                            class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"
-                                            data-abc="true"><i class="fa fa-twitter"></i></a> </div>
-                                </article>
-                            </aside>
-                            <aside class="col-sm-3 col-md-2">
-                                <h6 class="title">Acerca de nosotros</h6>
-                                <ul class="list-unstyled">
-                                    <li> <a href="#" data-abc="true">Quienes Somos</a></li>
-                                    <li> <a href="#" data-abc="true">Servicios</a></li>
-                                    <li> <a href="#" data-abc="true">Terminos y Condiciones</a></li>
-                                    <li> <a href="#" data-abc="true">Nuestro Blog</a></li>
-                                </ul>
-                            </aside>
-                            <aside class="col-sm-3 col-md-2">
-                                <h6 class="title">Servicios</h6>
-                                <ul class="list-unstyled">
-                                    <li> <a href="#" data-abc="true">Servicio al Cliente</a></li>
-                                    <li> <a href="#" data-abc="true">Codigo de Conducta</a></li>
-                                    <li> <a href="#" data-abc="true">Politica de Privacidad</a></li>
-                                    <li> <a href="#" data-abc="true">PQRS</a></li>
-                                </ul>
-                            </aside>
-                            <aside class="col-sm-3 col-md-2">
-                                <h6 class="title">Para clientes</h6>
-                                <ul class="list-unstyled">
-                                    <li> <a href="#" data-abc="true"> Inicio de Sesion </a></li>
-                                    <li> <a href="#" data-abc="true"> Resgitrate </a></li>
-                                    <li> <a href="#" data-abc="true"> Ajustes de cuenta </a></li>
-                                    <li> <a href="#" data-abc="true"> Mis paquetes </a></li>
-                                </ul>
-                            </aside>
-                            <aside class="col-sm-2 col-md-2">
-                                <h6 class="title">Our app</h6> <a href="#" class="d-block mb-2" data-abc="true"><img
-                                        class="img-responsive"
-                                        src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574317087/AAA/appstore.png"
-                                        height="40"></a> <a href="#" class="d-block mb-2" data-abc="true"><img
-                                        class="img-responsive"
-                                        src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574317110/AAA/playmarket.png"
-                                        height="40"></a>
-                            </aside>
-                        </div>
-                    </section>
-                    <section class="footer-copyright border-top">
-                        <p class="float-left text-muted"> © 2020 All rights resetved </p>
-                        <p target="_blank" class="float-right text-muted"> <a href="#" data-abc="true">Privacidad &amp;
-                                Cookies</a> &nbsp; &nbsp; <a href="#" data-abc="true">Accesibilidad</a> </p>
-                    </section>
-                </div>
-            </footer>
-        </output> </div>
+    <div class="container-fluid ">
+        <footer class="section-footer border-top ">
+            <div class="container-fluid ajuste-container ">
+                <section class="footer-top padding-y">
+                    <div class="row">
+                        <aside class="col-md-4">
+                            <article class="mr-3 ml-3"> <img class="img-responsive ajuste-img-footer"
+                                    src="img/tp1/logo grande.png" height="90" class="logo-footer">
+                                <p class="mt-3 description ajuste-p-footer ajuste-footer-xs">Paradice es una agencia de
+                                    viajes con mas
+                                    de 11 años de
+                                    trayectoria en el mercado, caracterizada por el buen servicio y oferta de
+                                    productos turísticos de calidad en destinos nacionales e internacionales.</p>
+                                <div> <a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"
+                                        data-abc="true"><i class="fa fa-facebook-f"></i></a> <a
+                                        class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"
+                                        data-abc="true"><i class="fa fa-instagram"></i></a> <a
+                                        class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"
+                                        data-abc="true"><i class="fa fa-youtube"></i></a> <a
+                                        class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"
+                                        data-abc="true"><i class="fa fa-twitter"></i></a> </div>
+                            </article>
+                        </aside>
+                        <aside class="col-sm-3 col-md-2">
+                            <h6 class="title ajuste-h6-footer">Acerca de nosotros</h6>
+                            <ul class="list-unstyled ajuste-p-footer">
+                                <li> <a href="#" data-abc="true">Quienes Somos</a></li>
+                                <li> <a href="#" data-abc="true">Servicios</a></li>
+                                <li> <a href="#" data-abc="true">Terminos y Condiciones</a></li>
+                                <li> <a href="#" data-abc="true">Nuestro Blog</a></li>
+                            </ul>
+                        </aside>
+                        <aside class="col-sm-3 col-md-2 ajuste-footer-xs">
+                            <h6 class="title ajuste-h6-footer ">Servicios</h6>
+                            <ul class="list-unstyled ajuste-p-footer">
+                                <li> <a href="#" data-abc="true">Servicio al Cliente</a></li>
+                                <li> <a href="#" data-abc="true">Codigo de Conducta</a></li>
+                                <li> <a href="#" data-abc="true">Politica de Privacidad</a></li>
+                                <li> <a href="#" data-abc="true">PQRS</a></li>
+                            </ul>
+                        </aside>
+                        <aside class="col-sm-3 col-md-2 ajuste-footer-xs">
+                            <h6 class="title ajuste-h6-footer ">Para clientes</h6>
+                            <ul class="list-unstyled ajuste-p-footer">
+                                <li> <a href="#" data-abc="true"> Inicio de Sesion </a></li>
+                                <li> <a href="#" data-abc="true"> Resgitrate </a></li>
+                                <li> <a href="#" data-abc="true"> Ajustes de cuenta </a></li>
+                                <li> <a href="#" data-abc="true"> Mis paquetes </a></li>
+                            </ul>
+                        </aside>
+                        <aside class="col-sm-2 col-md-2 ajuste-footer-xs">
+                            <h6 class="title ajuste-h6-footer ">Our app</h6> <a href="#" class="d-block mb-2"
+                                data-abc="true"><img class="img-responsive ajuste-img-footer-app"
+                                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574317087/AAA/appstore.png"
+                                    height="40"></a> <a href="#" class="d-block mb-2" data-abc="true"><img
+                                    class="img-responsive ajuste-img-footer-app"
+                                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574317110/AAA/playmarket.png"
+                                    height="40"></a>
+                        </aside>
+                    </div>
+                </section>
+                <section class="footer-copyright border-top ajuste-h6-footer">
+                    <p class="float-left text-muted"> © 2020 All rights resetved </p>
+                    <p target="_blank" class="float-right text-muted"> <a href="#" data-abc="true">Privacidad &amp;
+                            Cookies</a> &nbsp; &nbsp; <a href="#" data-abc="true">Accesibilidad</a> </p>
+                </section>
+            </div>
+        </footer>
+        </output>
+    </div>
 
 
 
